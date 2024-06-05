@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+</head>
+<body>
+    
+    <header class="">
+        
+            <div class="flex items-center justify-between container mx-auto py-2.5 ">
+                <a href="./home.html">
+                    <img src="./image/home-logo-icon.svg" alt="">
+                </a>
+                <div class="flex items-center gap-[105px]">
+                    <div class="flex items-center gap-3 border px-4 py-1.5 rounded-full ">
+                        <label for="search-book">
+                            <img src="./image/search-book-icon.svg" alt="">
+                        </label>
+                        <input placeholder="Search books" id="search-book" class="py-1 min-w-[670px] outline-none" type="text">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <button>
+                            <img src="./image/sun-btn.svg" alt="">
+                        </button>
+                        <button class="logout text-base py-2.5 px-6 bg-[#0D75FF] rounded-md">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="border-y ">
+            <div class="container mx-auto flex justify-between items-center py-2.5">
+                <h2 class="result text-sm">
+
+                </h2>
+                <button class="flex items-center gap-1 bg-[#A6B0C3] py-1 px-3 rounded-md">
+                    <img src="./image/filter-icon.svg" alt="">
+                    <p class="text-sm text-white">
+                        Order by newest
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="grid grid-cols-12 container mx-auto">
+            <div class="col-span-2 border-r">
+               <div class="py-6">
+                <h2 class="text-2xl">
+                    Bookmarks
+                   </h2>
+                   <p class="text-sm">
+                    If you don't like to read, you haven't found the right book
+                   </p>
+               </div>
+               <ul class="bookmark-list   ">
+
+               </ul>
+            </div>
+            <div class="col-span-10">
+                <ul class="books-list grid grid-cols-3 gap-8 p-10 bg-[#F8FAFD]">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./script/book.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

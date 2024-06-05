@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+
+<body class="bg-black">
+
+
+    <form class="form min-w-[300px]">
+        <a href="./index.html">
+            <img class="w-full" src="./image/login-logo.svg" alt="">
+        </a>
+
+        <div class="mt-12 border border-white flex items-center gap-5 px-3 py-2 rounded-md">
+            <label for="login">
+                <img src="./image/login-user .svg" alt="">
+            </label>
+            <input   placeholder="USERNAME" id="login" class="text-sm placeholder-white py-1 font-thin w-full bg-transparent outline-none text-white " type="email">
+        </div>
+
+        <div class="mt-5 border border-white flex items-center gap-5 px-3 py-2 rounded-md">
+            <label for="pass">
+                <img src="./image/login-lock.svg" alt="">
+            </label>
+            <input autocomplete="off" placeholder="PASSWORD " id="pass" class="text-sm  py-1 
+            placeholder-white font-thin w-full bg-transparent outline-none text-white" type="password">
+
+        </div>
+        <button class="mt-10 w-full bg-white font-medium uppercase text-base py-2 text-[#0D75FF] rounded-md">
+            login
+        </button>
+        
+        <div class="text-right mt-2.5 text-white">
+            <a class="text-base" href="#">
+                Forgot password ?
+            </a>
+        </div>
+    </form>
+
+
+
+
+    <script src="./script/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
